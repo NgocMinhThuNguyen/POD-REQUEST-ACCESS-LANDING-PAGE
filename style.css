@@ -177,6 +177,8 @@ button {
   section {
     padding-top: 5.8125rem;
     padding-left: 2.4375rem;
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   /* HEADING */
@@ -193,5 +195,11 @@ button {
     padding-right: 11.875rem;
   }
 
-  
+  ul {
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-right: 6.1875rem;
+  }
+
 }
