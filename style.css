@@ -118,3 +118,9 @@ input::placeholder {
   line-height: 1.75rem;
   padding-left: 2rem;
 }
+
+button {
+  background-color: var(--green);
+  color: var(--very-dark-grayish);
+  text-transform: capitalize;
+}
