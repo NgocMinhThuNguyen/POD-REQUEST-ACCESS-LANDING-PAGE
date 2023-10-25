@@ -1,0 +1,21 @@
+/* IMPORT FONT FAMILY*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;400;900&display=swap');
+
+/* DECLARE VARIABLES*/
+:root {
+  --green: hsla(157, 74%, 61%, 1);
+  --light-green: hsla(157, 100%, 85%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --red: hsla(0, 96%, 61%, 1);
+  --light-grayish: hsla(225, 40%, 83%, 1);
+  --grayish: hsla(225, 21%, 45%, 1);
+  --dark-grayish: hsla(225, 26%, 23%, 1);
+  --very-dark-grayish: hsla(224, 35%, 11%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
