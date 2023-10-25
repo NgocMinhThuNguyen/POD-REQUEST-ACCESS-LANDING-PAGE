@@ -27,13 +27,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: center;
-  margin-top: 3.875rem;
+  align-self: center;
   margin-bottom: 3.5625rem;
   position: relative;
   z-index: 3;
@@ -41,7 +42,7 @@ header {
 
 /* MAIN */
 main {
-  margin: 0 1.5rem 5.875rem 1.5rem;
+  margin: 0 1.5rem;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -143,4 +144,54 @@ button {
   z-index: 1;
   background-color: var(--very-dark-grayish);
   opacity: .8;
+}
+
+@media (min-width: 768px) {
+  /* BODY */ 
+  body {
+    display: block;
+    background-color: var(--very-dark-grayish);
+    background-image: url('assets/images/image-host-tablet.jpg'), url('assets/images/bg-pattern-dots.svg');
+    background-position: top right, bottom 5% left 5%;
+    background-size: auto;
+  }
+
+  .background {
+    display: none;
+  }
+
+  /* HEADER */
+  header {
+    margin-top: 3.125rem;
+    margin-bottom: 9.5rem;
+    margin-left: 2.4375rem;
+  }
+
+  /* MAIN */
+  main {
+    background-color: var(--very-dark-grayish);
+    text-align: left;
+    margin-left: 0;
+  }
+
+  section {
+    padding-top: 5.8125rem;
+    padding-left: 2.4375rem;
+  }
+
+  /* HEADING */
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.9375rem;
+  }
+
+  .text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+    padding-right: 11.875rem;
+  }
+
+  
 }
