@@ -40,3 +40,16 @@ header {
 main {
   margin: 0 1.5rem 5.875rem 1.5rem;
 }
+
+/* HEADING */
+h1 {
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  font-weight: 100;
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: var(--white);
+}
