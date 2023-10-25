@@ -202,4 +202,19 @@ button {
     padding-right: 6.1875rem;
   }
 
+  form {
+    position: relative;
+    max-width: 431px;
+  }
+
+  input {
+    height: 3.5rem;
+  }
+
+  button {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    right: .3125rem;
+  }
 }
