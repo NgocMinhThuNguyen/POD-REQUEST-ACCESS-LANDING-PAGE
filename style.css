@@ -35,3 +35,8 @@ header {
   margin-top: 3.875rem;
   margin-bottom: 3.5625rem;
 }
+
+/* MAIN */
+main {
+  margin: 0 1.5rem 5.875rem 1.5rem;
+}
