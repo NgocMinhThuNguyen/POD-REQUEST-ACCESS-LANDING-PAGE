@@ -55,3 +55,11 @@ h1 {
 h1 span {
   color: var(--white);
 }
+
+/* TEXT */
+.text {
+  font-size: .9375rem;
+  line-height: 1.5625rem;
+  color: var(--light-grayish);
+  margin-bottom: 2.0625rem;
+}
