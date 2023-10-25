@@ -64,3 +64,9 @@ h1 span {
   color: var(--light-grayish);
   margin-bottom: 2.0625rem;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
