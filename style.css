@@ -25,7 +25,8 @@ body {
   font-family: 'Chivo', sans-serif;
   background-image: url('assets/images/image-hos-mobilet.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  z-index: 2;
 }
 
 /* HEADER */
@@ -34,12 +35,16 @@ header {
   justify-content: center;
   margin-top: 3.875rem;
   margin-bottom: 3.5625rem;
+  position: relative;
+  z-index: 3;
 }
 
 /* MAIN */
 main {
   margin: 0 1.5rem 5.875rem 1.5rem;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 /* HEADING */
@@ -128,4 +133,14 @@ button {
 
 .error {
   display: none;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: var(--very-dark-grayish);
+  opacity: .8;
 }
