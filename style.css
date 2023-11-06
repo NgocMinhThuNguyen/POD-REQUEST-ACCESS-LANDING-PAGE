@@ -133,6 +133,11 @@ button {
   text-transform: capitalize;
 }
 
+button:hover {
+  background-color: var(--light-green);
+  cursor: pointer;
+}
+
 .error {
   display: none;
 }
