@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
 }
 
 /* HEADER */
@@ -152,8 +153,9 @@ button {
     display: block;
     background-color: var(--very-dark-grayish);
     background-image: url('assets/images/image-host-tablet.jpg'), url('assets/images/bg-pattern-dots.svg');
-    background-position: top right, bottom 5% left 5%;
+    background-position: top right, bottom left 5%;
     background-size: auto;
+    padding-top: 3.125rem;
   }
 
   .background {
@@ -162,7 +164,6 @@ button {
 
   /* HEADER */
   header {
-    margin-top: 3.125rem;
     margin-bottom: 9.5rem;
     margin-left: 2.4375rem;
   }
@@ -172,6 +173,8 @@ button {
     background-color: var(--very-dark-grayish);
     text-align: left;
     margin-left: 0;
+    min-width: 635px;
+    max-width: 743px;
   }
 
   section {
@@ -203,18 +206,34 @@ button {
   }
 
   form {
-    position: relative;
-    max-width: 431px;
+    display: grid;
+    grid-template-areas: "form";
+    max-width: 427px;
+    min-height: 56px;
+    margin-bottom: 4rem;
   }
 
   input {
-    height: 3.5rem;
+    height: 100%;
+    grid-area: form;
   }
 
   button {
-    position: absolute;
+    grid-area: form;
+    justify-self: end;
+    align-self: center;
     width: 40%;
-    height: 80%;
-    right: .3125rem;
+    height: 84%;
+    margin-right: .3125rem;
+  }
+
+  @media (min-width: 1440px) {
+    body {
+    background-image: url('assets/images/bg-pattern-dots.svg'), url('assets/images/image-host-desktop.jpg');
+    background-position: bottom 80px left 100%, bottom 130px right;
+    background-attachment: scroll;
+    padding-left: 126px;
+    padding-bottom: 130px;
+    }
   }
 }
