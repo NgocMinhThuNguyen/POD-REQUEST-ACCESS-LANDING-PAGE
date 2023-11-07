@@ -9,7 +9,7 @@
   --red: hsla(0, 96%, 61%, 1);
   --light-grayish: hsla(225, 40%, 83%, 1);
   --grayish: hsla(225, 21%, 45%, 1);
-  --dark-grayish: hsla(225, 26%, 23%, 1);
+  --dark-grayish: hsla(225, 26%, 23%,1);
   --very-dark-grayish: hsla(224, 35%, 11%, 1);
 }
 
@@ -22,15 +22,15 @@
 /* BODY */
 body {
   min-height: 100vh;
-  font-family: 'Chivo', sans-serif;
-  background-image: url('assets/images/image-hos-mobilet.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 2;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  font-family: 'Chivo', sans-serif;
+  background-image: url('assets/images/image-hos-mobilet.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* z-index: 2; */
 }
 
 /* HEADER */
@@ -117,14 +117,15 @@ input, button {
 input {
   background-color: var(--dark-grayish);
   margin-bottom: 1rem;
-}
-
-input::placeholder {
   color: var(--white);
   font-size: .875rem;
   opacity: .5;
   line-height: 1.75rem;
   padding-left: 2rem;
+}
+
+input.show-error {
+  margin-bottom: 0;
 }
 
 button {
@@ -140,6 +141,15 @@ button:hover {
 
 .error {
   display: none;
+}
+
+p.show-error {
+  display: block;
+  color: var(--red);
+  font-size: .75rem;
+  font-weight: 400;
+  text-align: left;
+  margin: .5rem 2rem;
 }
 
 .background {
@@ -221,6 +231,7 @@ button:hover {
   input {
     height: 100%;
     grid-area: form;
+    position: relative
   }
 
   button {
@@ -230,6 +241,7 @@ button:hover {
     width: 40%;
     height: 84%;
     margin-right: .3125rem;
+    position: relative;
   }
 
   @media (min-width: 1440px) {
