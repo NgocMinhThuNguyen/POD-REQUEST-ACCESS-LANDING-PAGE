@@ -162,7 +162,6 @@ button:hover {
 
 p.show-error {
   visibility: visible;
-  /* margin: .5rem 2rem; */
 }
 
 .background {
@@ -258,8 +257,10 @@ p.show-error {
     grid-area: form;
     justify-self: end;
     align-self: center;
+
     width: 40%;
     height: 84%;
+    
     margin-right: .3125rem;
     position: relative;
   }
