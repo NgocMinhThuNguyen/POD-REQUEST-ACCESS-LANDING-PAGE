@@ -126,6 +126,7 @@ input, button {
 
 input {
   background-color: var(--dark-grayish);
+  margin-bottom: 1rem;
   padding-left: 2rem;
 
   color: var(--white);
@@ -136,6 +137,10 @@ input {
 input::placeholder {
   color: var(--light-grayish);
   opacity: .5;
+}
+
+input.show-error {
+  margin-bottom: 0;
 }
 
 button {
@@ -249,7 +254,10 @@ p.show-error {
 
   input {
     grid-area: form;
-    height: 100%;
+    align-self: center;
+
+    height: 56px;
+    margin-bottom: 0;
     position: relative;
   }
 
@@ -259,14 +267,15 @@ p.show-error {
     align-self: center;
 
     width: 40%;
-    height: 84%;
-    
+    height: 46px;
+
     margin-right: .3125rem;
     position: relative;
   }
 
   .error {
     grid-area: error;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1440px) {
