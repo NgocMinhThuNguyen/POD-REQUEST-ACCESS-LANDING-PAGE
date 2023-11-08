@@ -12,7 +12,7 @@ function validateForm() {
   let error = input.nextElementSibling;
   
     if (userEmail === '') {
-      showError(input, error);
+      error.classList.add("show-error"); // Invalid email
     } else {
       validateEmail(userEmail, error);
     }
@@ -22,18 +22,9 @@ function validateForm() {
 function validateEmail(userEmail, error) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if(!(emailRegex.test(userEmail))) {
-    showError(input, error);
+    error.classList.add("show-error"); // Invalid email
   } else {
-    showSucces(input, error);
+    error.classList.remove("show-error");  // Valid email
+    alert('Your request has been submitted!')
   }
-}
-
-function showError(input, error) {
-  input.classList.add("show-error");
-  error.classList.add("show-error");
-}
-
-function showSucces(input, error) {
-  input.classList.remove("show-error");
-  error.classList.remove("show-error");
 }
