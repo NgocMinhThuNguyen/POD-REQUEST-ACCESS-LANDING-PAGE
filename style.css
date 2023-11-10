@@ -28,11 +28,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url('assets/images/image-hos-mobilet.jpg');
+  background-image: url('assets/images/image-host-mobilet.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
   font-family: 'Chivo', sans-serif;
+}
+
+.background1 {
+  display: none;
 }
 
 /* HEADER */
@@ -184,13 +188,13 @@ p.show-error {
 @media (min-width: 768px) {
   /* BODY */ 
   body {
-    display: block;
     background-color: var(--very-dark-grayish);
     background-image: url('assets/images/image-host-tablet.jpg'), url('assets/images/bg-pattern-dots.svg');
     background-position: top right, bottom left 5%;
     background-size: auto;
     padding-top: 3.125rem;
     padding-bottom: 16.0625rem;
+    align-items: start;
   }
 
   .background {
@@ -199,6 +203,7 @@ p.show-error {
 
   /* HEADER */
   header {
+    align-self: start;;
     margin-bottom: 9.5rem;
     margin-left: 2.4375rem;
   }
@@ -206,7 +211,6 @@ p.show-error {
   /* MAIN */
   main {
     min-width: 635px;
-    max-width: 743px;
     margin-left: 0;
     background-color: var(--very-dark-grayish);
     text-align: left;
@@ -286,5 +290,9 @@ p.show-error {
     padding-left: 7.875rem;
     padding-bottom: 8.125rem;
     }
+  }
+
+  main {
+    max-width: 743px;
   }
 }
