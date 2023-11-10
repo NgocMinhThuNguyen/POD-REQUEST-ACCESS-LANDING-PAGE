@@ -12,7 +12,8 @@ function validateForm() {
   let error = input.nextElementSibling;
   
     if (userEmail === '') {
-      error.classList.add("show-error"); // Invalid email
+      error.textContent = 'Oops! Please add your email';
+      showError(input, error);
     } else {
       validateEmail(userEmail, error);
     }
@@ -22,9 +23,20 @@ function validateForm() {
 function validateEmail(userEmail, error) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if(!(emailRegex.test(userEmail))) {
-    error.classList.add("show-error"); // Invalid email
+    error.textContent = 'Oops! Please check your email';
+    showError(input, error);
   } else {
-    error.classList.remove("show-error");  // Valid email
-    alert('Your request has been submitted!')
+    showSucces(input, error);
   }
+}
+
+function showError(input, error) {
+  input.classList.add("show-error");
+  error.classList.add("show-error");
+}
+
+function showSucces(input, error) {
+  input.classList.remove("show-error");
+  error.classList.remove("show-error");
+  alert('Your request has been submited! \nThank you for visiting my practice!')
 }
