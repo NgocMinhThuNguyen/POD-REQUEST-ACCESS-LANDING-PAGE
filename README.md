@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/NgocMinhThuNguyen/POD-REQUEST-ACCESS-LANDING-PAGE.git)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://ngocminhthunguyen.github.io/POD-REQUEST-ACCESS-LANDING-PAGE/)
 
 ## Built with
 
